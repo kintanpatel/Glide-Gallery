@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="kvp.gallery.MainActivity">
+
+        <ImageView
+            android:id="@+id/img_preview"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:text="Hello World!" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+</FrameLayout>
